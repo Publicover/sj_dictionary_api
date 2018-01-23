@@ -18,7 +18,7 @@ gem 'puma', '~> 3.0'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'pg'
+gem 'pg', '~> 0.20'
 gem 'reek'
 gem 'rubocop', require: false
 gem 'simplecov'
