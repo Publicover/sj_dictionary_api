@@ -37,6 +37,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'rspec-rails'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -49,7 +50,6 @@ end
 group :test do
   gem 'faker'
   gem 'shoulda-matchers'
-  gem 'sqlite3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
