@@ -8,7 +8,7 @@ RSpec.describe 'Definitions API', type: :request do
 
   # definitions index
   describe 'GET /words/:word_id/definitions' do
-    before { get "/words/#{word_id}/definitions"}
+    before { get "/words/#{word_id}/definitions" }
 
     context 'when word exists' do
       it 'returns status code 200' do
@@ -34,8 +34,8 @@ RSpec.describe 'Definitions API', type: :request do
   end
 
   # definitions show
-  describe 'GET /words/:word_id/definitions/:id' do
-    before { get "/words/#{word_id}/definitions/#{id}"}
+  describe 'GET /words/:word_id/definition/:id' do
+    before { get "/words/#{word_id}/definitions/#{id}" }
 
     context 'when definition exists' do
       it 'returns status code 200' do
@@ -47,7 +47,7 @@ RSpec.describe 'Definitions API', type: :request do
       end
     end
 
-    context 'when definition does not exist' do 
+    context 'when definition does not exist' do
       let(:id) { 0 }
 
       it 'returns status code 404' do
